@@ -53,8 +53,8 @@ class ResPartner(models.Model):
                     ._create_user_from_template(user_values)
                 )
 
-                (
-                    user.sudo()
-                    .with_context({"create_user": True, "active_test": True})
-                    .action_reset_password()
-                )
+                # (
+                #     user.sudo()
+                #     .with_context({"create_user": True, "active_test": True})
+                #     .action_reset_password()
+                # )
